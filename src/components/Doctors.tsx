@@ -16,7 +16,7 @@ const Doctors = () => {
         { day: 'Senin-Rabu', time: '08:00-12:00' },
         { day: 'Jumat-Sabtu', time: '16:00-20:00' }
       ],
-      image: '/image/dokter1.jpeg',
+      image: '/image/dokter1.jpeg', //UBAH SEMUA IMAGE KAYA GINI NANTI YA
       rating: 4.9,
       patients: 2500
     },
