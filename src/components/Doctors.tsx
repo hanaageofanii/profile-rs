@@ -16,7 +16,7 @@ const Doctors = () => {
         { day: 'Senin-Rabu', time: '08:00-12:00' },
         { day: 'Jumat-Sabtu', time: '16:00-20:00' }
       ],
-      image: '/image/dokter1.jpeg',
+      // image: '/images/dokter1.jpeg',
       rating: 4.9,
       patients: 2500
     },
@@ -29,7 +29,7 @@ const Doctors = () => {
         { day: 'Selasa-Kamis', time: '09:00-13:00' },
         { day: 'Sabtu', time: '08:00-12:00' }
       ],
-      image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg',
+      // image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg',
       rating: 4.8,
       patients: 1800
     },
@@ -42,7 +42,7 @@ const Doctors = () => {
         { day: 'Senin-Kamis', time: '14:00-18:00' },
         { day: 'Sabtu', time: '09:00-13:00' }
       ],
-      image: 'https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg',
+      // image: 'https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg',
       rating: 4.9,
       patients: 3200
     },
@@ -55,7 +55,7 @@ const Doctors = () => {
         { day: 'Rabu-Jumat', time: '07:00-11:00' },
         { day: 'Minggu', time: '08:00-12:00' }
       ],
-      image: 'https://images.pexels.com/photos/5452207/pexels-photo-5452207.jpeg',
+      // image: 'https://images.pexels.com/photos/5452207/pexels-photo-5452207.jpeg',
       rating: 4.7,
       patients: 2100
     },
@@ -68,7 +68,7 @@ const Doctors = () => {
         { day: 'Senin-Rabu', time: '13:00-17:00' },
         { day: 'Jumat', time: '08:00-12:00' }
       ],
-      image: 'https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg',
+      // image: 'https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg',
       rating: 4.8,
       patients: 1500
     },
@@ -81,7 +81,7 @@ const Doctors = () => {
         { day: 'Selasa-Kamis', time: '15:00-19:00' },
         { day: 'Sabtu', time: '10:00-14:00' }
       ],
-      image: 'https://images.pexels.com/photos/5452285/pexels-photo-5452285.jpeg',
+      // image: 'https://images.pexels.com/photos/5452285/pexels-photo-5452285.jpeg',
       rating: 4.6,
       patients: 1200
     }
@@ -136,7 +136,7 @@ const Doctors = () => {
             <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
               <div className="aspect-square overflow-hidden">
                 <img 
-                  src={doctor.image} 
+                  // src={doctor.image} 
                   alt={doctor.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
