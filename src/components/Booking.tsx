@@ -124,11 +124,11 @@ const Booking = () => {
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <Phone size={16} className="text-blue-600" />
-                      <span className="text-sm text-gray-600">Telepon: (021) 456-7890</span>
+                      <span className="text-sm text-gray-600">Telepon: (022) 6620965</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Mail size={16} className="text-green-600" />
-                      <span className="text-sm text-gray-600">WhatsApp: 0812-3456-7890</span>
+                      <span className="text-sm text-gray-600">WhatsApp: 0857-2105-5325</span>
                     </div>
                   </div>
                 </div>
