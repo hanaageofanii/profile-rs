@@ -27,7 +27,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl text-gray-600 max-w-xl">
-                RS Sehat Sejahtera memberikan pelayanan kesehatan terbaik dengan teknologi modern dan tim medis berpengalaman untuk keluarga Indonesia.
+                RS Indra Medical Center memberikan pelayanan kesehatan terbaik dengan teknologi modern dan tim medis berpengalaman untuk keluarga Indonesia.
               </p>
             </div>
 
@@ -75,7 +75,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <div className="text-sm text-gray-600">IGD 24 Jam</div>
-                  <div className="font-semibold">(021) 123-4567</div>
+                  <div className="font-semibold">(022) 6620965</div>
                 </div>
               </div>
               
@@ -85,7 +85,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <div className="text-sm text-gray-600">Alamat</div>
-                  <div className="font-semibold">Jl. Kesehatan No. 123</div>
+                  <div className="font-semibold">Jl. Raya Gadobangkong No.173, Cimareme, Kec. Ngamprah, Kab. Bandung Barat, Jawa Barat 40552</div>
                 </div>
               </div>
             </div>
@@ -95,8 +95,8 @@ const Hero = () => {
           <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-green-100">
               <img 
-                src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg" 
-                alt="RS Sehat Sejahtera"
+                src="/images/RS.jpg" 
+                alt="RS IMC"
                 className="w-full h-full object-cover"
               />
             </div>

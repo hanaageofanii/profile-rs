@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, Star, Phone, Filter } from 'lucide-react';
+import { Calendar, Clock, Star, MapPin, Phone, Filter } from 'lucide-react';
 
 const Doctors = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState('Semua');

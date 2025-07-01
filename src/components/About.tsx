@@ -26,11 +26,11 @@ const About = () => {
   ];
 
   const achievements = [
-    { year: '1998', title: 'Berdiri sebagai Rumah Sakit Swasta' },
-    { year: '2005', title: 'Meraih Akreditasi KARS Tingkat Dasar' },
-    { year: '2012', title: 'Akreditasi KARS Tingkat Lanjut' },
-    { year: '2018', title: 'Sertifikat ISO 9001:2015' },
-    { year: '2022', title: 'Akreditasi KARS Tingkat Paripurna' }
+    { year: '2016', title: 'Berdiri sebagai Rumah Sakit Swasta' },
+    { year: '2018', title: 'Meraih Akreditasi KARS Tingkat Dasar' },
+    { year: '2020', title: 'Akreditasi KARS Tingkat Lanjut' },
+    { year: '2022', title: 'Sertifikat ISO 9001:2015' },
+    { year: '2024', title: 'Akreditasi KARS Tingkat Paripurna' }
   ];
 
   return (
@@ -40,7 +40,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Tentang Kami</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            RS Sehat Sejahtera telah melayani masyarakat Indonesia selama lebih dari 25 tahun dengan komitmen memberikan pelayanan kesehatan terbaik
+            RS IMC telah melayani masyarakat Indonesia selama lebih dari 10 tahun dengan komitmen memberikan pelayanan kesehatan terbaik
           </p>
         </div>
 
@@ -49,10 +49,16 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900">Sejarah Kami</h3>
             <p className="text-gray-600 leading-relaxed">
-              Didirikan pada tahun 1998, RS Sehat Sejahtera dimulai sebagai klinik kecil dengan visi besar untuk memberikan pelayanan kesehatan yang terjangkau dan berkualitas. Seiring berjalannya waktu, kami terus berkembang menjadi rumah sakit modern dengan fasilitas lengkap.
+              Rumah Sakit Indra Medical Centre (IMC) berawal dari Klinik IMC, yang didirikan pada tahun
+ 2008 untuk memberikan layanan kesehatan bagi masyarakat. Seiring dengan meningkatnya
+ kebutuhan akan pelayanan medis yang lebih lengkap dan berkualitas, manajemen Klinik IMC
+ mengambil langkah strategis untuk meningkatkan statusnya menjadi rumah sakit
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Kini, kami telah melayani lebih dari 500,000 pasien dengan tingkat kepuasan yang tinggi, didukung oleh tim medis profesional dan teknologi medis terdepan.
+              Pada 4 Januari 2016, Rumah Sakit Indra Medical Centre (IMC) resmi beroperasi sebagai
+ rumah sakit swasta mandiri yang berkomitmen memberikan pelayanan kesehatan terbaik
+ bagi masyarakat. Dengan kapasitas 64 tempat tidur, RS IMC menghadirkan fasilitas modern,
+ tenaga medis profesional, serta dokter spesialis dari berbagai disiplin ilmu.
             </p>
             
             {/* Timeline */}
@@ -76,7 +82,7 @@ const About = () => {
             <div className="bg-blue-50 p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Visi</h3>
               <p className="text-blue-800">
-                Menjadi rumah sakit terpercaya dan terdepan dalam memberikan pelayanan kesehatan yang holistik, profesional, dan terjangkau untuk seluruh lapisan masyarakat Indonesia.
+                Meningkatkan taraf kesehatan masyarakat. Memberikan pelayanan yang prima, berkualitas, kesehatan berkesinambungan dan dapat dijangkau masyarakat Menjadi rumah sakit yang mengedepankan sisi pelayanan yang humanis
               </p>
             </div>
 
@@ -86,19 +92,21 @@ const About = () => {
               <ul className="space-y-3 text-green-800">
                 <li className="flex items-start space-x-3">
                   <CheckCircle size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span>Memberikan pelayanan kesehatan yang berkualitas tinggi dengan teknologi modern</span>
+                  <span>Menyelenggarakan pelayanan kesehatan yang humanis, prima, informatif, dan efektif dengan tetap memperhatikan aspek sosial.</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span>Mengembangkan SDM yang kompeten dan profesional</span>
+                  <span> Membangun SDM yang profesional, dan berorientasi pada konsumen serta berintegrasi tinggi dalam memberikan pelayanan.</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span>Menjalin kemitraan strategis untuk peningkatan mutu layanan</span>
+                  <span>Mewujudkan sistem manajemen rumah sakit yang menjamin kepastian
+ hukum secara efektif, efisien, transparan, akuntabel dan responsif
+ menjawab tuntutan masyarakat. </span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                  <span>Berpartisipasi aktif dalam program kesehatan masyarakat</span>
+                  <span>Meningkatkan kesejahteraan seluruh staf dan karyawan </span>
                 </li>
               </ul>
             </div>

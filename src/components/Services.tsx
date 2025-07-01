@@ -42,14 +42,14 @@ const Services = () => {
   ];
 
   const specialistServices = [
-    { name: 'Penyakit Dalam', icon: Heart, doctor: 'dr. Ahmad Santoso, Sp.PD' },
-    { name: 'Anak', icon: Baby, doctor: 'dr. Sari Dewi, Sp.A' },
-    { name: 'Kandungan', icon: Heart, doctor: 'dr. Maya Indira, Sp.OG' },
-    { name: 'Bedah', icon: Activity, doctor: 'dr. Budi Prasetyo, Sp.B' },
-    { name: 'Mata', icon: Eye, doctor: 'dr. Lisa Hartono, Sp.M' },
-    { name: 'THT', icon: Stethoscope, doctor: 'dr. Rizki Amalia, Sp.THT' },
-    { name: 'Orthopedi', icon: Bone, doctor: 'dr. Dedi Kurniawan, Sp.OT' },
-    { name: 'Saraf', icon: Brain, doctor: 'dr. Nina Safitri, Sp.S' }
+    { name: 'Penyakit Dalam', icon: Heart, doctor: ' dr. Alya Putri K, Sp.PD' },
+    { name: 'Anak', icon: Baby, doctor: ' dr. Indah Ceria W, Sp. A' },
+    { name: 'Kandungan', icon: Heart, doctor: ' dr. Fauzan, Sp.OG' },
+    { name: 'Bedah', icon: Activity, doctor: ' dr. Gerhard Chistoffel Sp. B' },
+    { name: 'Mata', icon: Eye, doctor: ' dr. Chalid Kurniawan, Sp.M' },
+    { name: 'THT', icon: Stethoscope, doctor: ' dr. Sondang Berlian Rosalind Silalahi, Sp. THT-KL,MARS' },
+    { name: 'Anaesthesi', icon: Bone, doctor: 'dr. Ayu Puji Lestari Sp.An' },
+    { name: 'Gigi', icon: Brain, doctor: 'drg. Linda Lamora Hasibuan' }
   ];
 
   const scrollToSection = (sectionId: string) => {

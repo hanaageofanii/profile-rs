@@ -30,7 +30,7 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone size={14} />
-                <span>IGD: (021) 123-4567</span>
+                <span>IGD: (022) 6620965</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock size={14} />
@@ -39,7 +39,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <MapPin size={14} />
-              <span>Jl. Kesehatan No. 123, Jakarta</span>
+              <span>Jl. Raya Gadobangkong No.173, Cimareme, Kec. Ngamprah, Kab. Bandung Barat, Jawa Barat 40552</span>
             </div>
           </div>
         </div>
@@ -53,10 +53,10 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RS</span>
+                <span className="text-white font-bold text-lg">IMC</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-800">RS Sehat Sejahtera</h1>
+                <h1 className="text-xl font-bold text-gray-800">RS Indra Medical Center</h1>
                 <p className="text-sm text-gray-600">Pelayanan Kesehatan Terpercaya</p>
               </div>
             </div>
