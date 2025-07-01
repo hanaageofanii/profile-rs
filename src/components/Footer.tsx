@@ -28,9 +28,9 @@ const Footer = () => {
   ];
 
   const socialMedia = [
-    { icon: Facebook, name: 'Facebook', url: '#' },
-    { icon: Instagram, name: 'Instagram', url: '#' },
-    { icon: Youtube, name: 'YouTube', url: '#' },
+    { icon: Facebook, name: 'Facebook', url: 'https://www.facebook.com/pages/Rs.IMC%20Cimareme/466541770075097/#' },
+    { icon: Instagram, name: 'Instagram', url: 'https://www.instagram.com/rsu_imc/' },
+    { icon: Youtube, name: 'YouTube', url: 'https://www.tiktok.com/@rumahsakitimc' },
     { icon: Twitter, name: 'Twitter', url: '#' }
   ];
 
@@ -46,7 +46,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-lg">RS</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">RS Sehat Sejahtera</h3>
+                <h3 className="text-xl font-bold">RS Indra Medical Center</h3>
                 <p className="text-gray-400 text-sm">Pelayanan Kesehatan Terpercaya</p>
               </div>
             </div>
@@ -103,24 +103,24 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Jl. Kesehatan No. 123</p>
-                  <p className="text-gray-300">Jakarta Selatan 12345</p>
+                  <p className="text-gray-300">Jl. Raya Gadobangkong No.173, Cimareme, Kec. Ngamprah, Kab. Bandung Barat</p>
+                  <p className="text-gray-300">Jawa Barat 40552</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-green-400" />
                 <div>
-                  <p className="text-gray-300">IGD: (021) 123-4567</p>
-                  <p className="text-gray-300">Info: (021) 456-7890</p>
+                  <p className="text-gray-300">IGD: (022) 6620965</p>
+                  <p className="text-gray-300">Info: (022) 6620965</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-orange-400" />
                 <div>
-                  <p className="text-gray-300">info@rssehat.co.id</p>
-                  <p className="text-gray-300">WhatsApp: 0812-3456-7890</p>
+                  <p className="text-gray-300">www.rsuimcpadalarang.co.id</p>
+                  <p className="text-gray-300">WhatsApp: 0857-2105-5325</p>
                 </div>
               </div>
 
@@ -163,7 +163,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                © 2025 RS Sehat Sejahtera. Seluruh hak cipta dilindungi undang-undang.
+                © 2025 RS Indra Medical Center. Seluruh hak cipta dilindungi undang-undang.
               </p>
               <p className="text-gray-500 text-xs mt-1">
                 Nomor Izin: 445/SIK-RS/DPMPTSP/2023 | KARS Paripurna
@@ -188,7 +188,7 @@ const Footer = () => {
       {/* Emergency Alert */}
       <div className="bg-red-600 text-center py-2">
         <p className="text-white text-sm font-medium">
-          🚨 DARURAT? Hubungi IGD 24 Jam: (021) 123-4567 🚨
+          🚨 DARURAT? Hubungi IGD 24 Jam: (022) 6620965 🚨
         </p>
       </div>
     </footer>

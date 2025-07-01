@@ -29,26 +29,26 @@ const Contact = () => {
       icon: Phone,
       title: 'Telepon',
       details: [
-        { label: 'IGD 24 Jam', value: '(021) 123-4567', urgent: true },
-        { label: 'Informasi Umum', value: '(021) 456-7890' },
-        { label: 'Pendaftaran', value: '(021) 789-0123' }
+        { label: 'IGD 24 Jam', value: '(022) 6620965', urgent: true },
+        { label: 'Informasi Umum', value: '(022) 6620965' },
+        { label: 'Pendaftaran', value: '(022) 6620965' }
       ]
     },
     {
       icon: Mail,
       title: 'Email & Digital',
       details: [
-        { label: 'Email Umum', value: 'info@rssehat.co.id' },
-        { label: 'WhatsApp', value: '0812-3456-7890' },
-        { label: 'Website', value: 'www.rssehat.co.id' }
+        { label: 'Email Umum', value: 'rsindramedicalcenter173@gmail.com' },
+        { label: 'WhatsApp', value: '0857-2105-5325' },
+        { label: 'Website', value: 'www.rsuimcpadalarang.co.id' }
       ]
     },
     {
       icon: MapPin,
       title: 'Alamat',
       details: [
-        { label: 'Jl. Kesehatan No. 123', value: 'Jakarta Selatan 12345' },
-        { label: 'Dekat MRT Blok M', value: 'Akses mudah transportasi umum' }
+        { label: 'Jl. Raya Gadobangkong No.173, Cimareme, Kec. Ngamprah, Kab. Bandung Barat', value: 'Jawa Barat 40552' },
+        { label: 'Dekat Stasiun Gadobangkong', value: 'Akses mudah transportasi umum' }
       ]
     },
     {
@@ -234,14 +234,21 @@ const Contact = () => {
             <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
               <div className="p-6 border-b border-gray-100">
                 <h3 className="text-xl font-bold text-gray-900">Lokasi Kami</h3>
-                <p className="text-gray-600">RS Sehat Sejahtera - Jakarta Selatan</p>
+                <p className="text-gray-600">RS Indra Medical Center - Bandung Barat</p>
               </div>
               <div className="aspect-video bg-gray-100 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin size={48} className="text-gray-400 mx-auto mb-4" />
                   <h4 className="text-lg font-semibold text-gray-600 mb-2">Google Maps</h4>
-                  <p className="text-gray-500">Jl. Kesehatan No. 123, Jakarta Selatan</p>
-                  <p className="text-sm text-gray-400 mt-2">Dekat MRT Blok M & TransJakarta</p>
+                  <p className="text-gray-500">Jl. Raya Gadobangkong No.173, Cimareme, Kec. Ngamprah, Kab. Bandung Barat</p>
+                  <p className="text-sm text-gray-400 mt-2">Dekat Stasiun Gadobangkong</p>
+                   <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.227950105072!2d107.51008300000001!3d-6.863263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e4913afcf1ab%3A0x702791bac0b19921!2sRs%20Imc%20Padalarang!5e0!3m2!1sid!2sid!4v1751360954506!5m2!1sid!2sid"
+      className="w-full h-full border-0 rounded-b-3xl"
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
                 </div>
               </div>
             </div>
