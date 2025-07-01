@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, Star, MapPin, Phone, Filter } from 'lucide-react';
+import { Calendar, Clock, Star, Phone, Filter } from 'lucide-react';
 
 const Doctors = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState('Semua');
@@ -16,7 +16,7 @@ const Doctors = () => {
         { day: 'Senin-Rabu', time: '08:00-12:00' },
         { day: 'Jumat-Sabtu', time: '16:00-20:00' }
       ],
-      image: '/image/dokter1.jpeg', //UBAH SEMUA IMAGE KAYA GINI NANTI YA
+      image: '/image/dokter1.jpeg',
       rating: 4.9,
       patients: 2500
     },
