@@ -4,7 +4,7 @@ import { Calendar, Clock, Star, Phone, Filter } from 'lucide-react';
 const Doctors = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState('Semua');
 
-  const specialties = ['Semua', 'Penyakit Dalam', 'Anak', 'Kandungan', 'Bedah', 'Mata', 'THT', 'Orthopedi', 'Saraf'];
+  const specialties = ['Semua', 'Penyakit Dalam', 'Anak', 'Kandungan', 'Bedah', 'Mata', 'THT'];
 
   const doctors = [
     {
@@ -16,7 +16,6 @@ const Doctors = () => {
         { day: 'Senin-Rabu', time: '08:00-12:00' },
         { day: 'Jumat-Sabtu', time: '16:00-20:00' }
       ],
-      // image: '/images/dokter1.jpeg',
       rating: 4.9,
       patients: 2500
     },
@@ -29,7 +28,6 @@ const Doctors = () => {
         { day: 'Selasa-Kamis', time: '09:00-13:00' },
         { day: 'Sabtu', time: '08:00-12:00' }
       ],
-      // image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg',
       rating: 4.8,
       patients: 1800
     },
@@ -42,7 +40,6 @@ const Doctors = () => {
         { day: 'Senin-Kamis', time: '14:00-18:00' },
         { day: 'Sabtu', time: '09:00-13:00' }
       ],
-      // image: 'https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg',
       rating: 4.9,
       patients: 3200
     },
@@ -55,7 +52,6 @@ const Doctors = () => {
         { day: 'Rabu-Jumat', time: '07:00-11:00' },
         { day: 'Minggu', time: '08:00-12:00' }
       ],
-      // image: 'https://images.pexels.com/photos/5452207/pexels-photo-5452207.jpeg',
       rating: 4.7,
       patients: 2100
     },
@@ -68,7 +64,6 @@ const Doctors = () => {
         { day: 'Senin-Rabu', time: '13:00-17:00' },
         { day: 'Jumat', time: '08:00-12:00' }
       ],
-      // image: 'https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg',
       rating: 4.8,
       patients: 1500
     },
@@ -81,14 +76,13 @@ const Doctors = () => {
         { day: 'Selasa-Kamis', time: '15:00-19:00' },
         { day: 'Sabtu', time: '10:00-14:00' }
       ],
-      // image: 'https://images.pexels.com/photos/5452285/pexels-photo-5452285.jpeg',
       rating: 4.6,
       patients: 1200
     }
   ];
 
-  const filteredDoctors = selectedSpecialty === 'Semua' 
-    ? doctors 
+  const filteredDoctors = selectedSpecialty === 'Semua'
+    ? doctors
     : doctors.filter(doctor => doctor.specialty === selectedSpecialty);
 
   const scrollToSection = (sectionId: string) => {
@@ -133,48 +127,41 @@ const Doctors = () => {
         {/* Doctors Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {filteredDoctors.map((doctor, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div className="aspect-square overflow-hidden">
-                <img 
-                  // src={doctor.image} 
-                  alt={doctor.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">
+                  {doctor.specialty}
+                </span>
+                <div className="flex items-center space-x-1">
+                  <Star size={16} className="text-yellow-400 fill-current" />
+                  <span className="text-sm font-medium text-gray-600">{doctor.rating}</span>
+                </div>
               </div>
-              
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">
-                    {doctor.specialty}
-                  </span>
-                  <div className="flex items-center space-x-1">
-                    <Star size={16} className="text-yellow-400 fill-current" />
-                    <span className="text-sm font-medium text-gray-600">{doctor.rating}</span>
+
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{doctor.name}</h3>
+              <p className="text-gray-600 text-sm mb-2">{doctor.education}</p>
+              <p className="text-gray-500 text-sm mb-4">Pengalaman {doctor.experience} • {doctor.patients}+ Pasien</p>
+
+              <div className="space-y-2 mb-6">
+                <h4 className="font-semibold text-gray-900 text-sm">Jadwal Praktik:</h4>
+                {doctor.schedule.map((schedule, idx) => (
+                  <div key={idx} className="flex items-center justify-between text-sm">
+                    <span className="text-gray-600">{schedule.day}</span>
+                    <span className="text-gray-900 font-medium">{schedule.time}</span>
                   </div>
-                </div>
-                
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{doctor.name}</h3>
-                <p className="text-gray-600 text-sm mb-2">{doctor.education}</p>
-                <p className="text-gray-500 text-sm mb-4">Pengalaman {doctor.experience} • {doctor.patients}+ Pasien</p>
-                
-                <div className="space-y-2 mb-6">
-                  <h4 className="font-semibold text-gray-900 text-sm">Jadwal Praktik:</h4>
-                  {doctor.schedule.map((schedule, idx) => (
-                    <div key={idx} className="flex items-center justify-between text-sm">
-                      <span className="text-gray-600">{schedule.day}</span>
-                      <span className="text-gray-900 font-medium">{schedule.time}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <button 
-                  onClick={() => scrollToSection('booking')}
-                  className="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center justify-center space-x-2"
-                >
-                  <Calendar size={16} />
-                  <span>Buat Janji</span>
-                </button>
+                ))}
               </div>
+
+              <button
+                onClick={() => scrollToSection('booking')}
+                className="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition-colors duration-200 font-medium flex items-center justify-center space-x-2"
+              >
+                <Calendar size={16} />
+                <span>Buat Janji</span>
+              </button>
             </div>
           ))}
         </div>
@@ -189,7 +176,7 @@ const Doctors = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pendaftaran Mudah</h3>
               <p className="text-gray-600">Daftar online atau datang langsung ke rumah sakit</p>
             </div>
-            
+
             <div>
               <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Clock size={24} className="text-green-600" />
@@ -197,7 +184,7 @@ const Doctors = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Jadwal Fleksibel</h3>
               <p className="text-gray-600">Jadwal praktik yang disesuaikan dengan kebutuhan Anda</p>
             </div>
-            
+
             <div>
               <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Phone size={24} className="text-orange-600" />
