@@ -52,8 +52,12 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">IMC</span>
+              <div className="w-32 h-16 rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                <img
+                  src="/images/logo.png"
+                  alt="Logo IMC"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-800">RS Indra Medical Center</h1>
