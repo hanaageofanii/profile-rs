@@ -63,11 +63,50 @@ const Booking = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    alert('Pendaftaran berhasil! Kami akan menghubungi Anda untuk konfirmasi.');
-  };
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const {
+    name,
+    phone,
+    email,
+    birthDate,
+    gender,
+    address,
+    specialty,
+    doctor,
+    appointmentDate,
+    appointmentTime,
+    complaints,
+    insurance,
+    isNewPatient
+  } = formData;
+
+  const message = `
+📝 *Pendaftaran Konsultasi Online*
+
+👤 *Status Pasien:* ${isNewPatient ? 'Baru' : 'Lama'}
+📛 *Nama:* ${name}
+📞 *Telepon:* ${phone}
+📧 *Email:* ${email || '-'}
+🎂 *Tanggal Lahir:* ${birthDate}
+🚻 *Jenis Kelamin:* ${gender}
+🏠 *Alamat:* ${address}
+🏥 *Spesialisasi:* ${specialty}
+👨‍⚕️ *Dokter:* ${doctor}
+📅 *Tanggal:* ${appointmentDate}
+⏰ *Waktu:* ${appointmentTime} WIB
+📋 *Keluhan:* ${complaints || '-'}
+💳 *Asuransi:* ${insurance}
+`;
+
+  const encodedMessage = encodeURIComponent(message.trim());
+
+  const whatsappNumber = '6282128294624';
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, '_blank');
+};
 
   return (
     <section id="booking" className="py-20 bg-white">

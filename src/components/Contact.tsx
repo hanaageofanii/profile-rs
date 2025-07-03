@@ -18,11 +18,33 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Pesan Anda telah terkirim! Kami akan menghubungi Anda segera.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-  };
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const {
+    name,
+    phone,
+    email,
+    subject,
+    message,
+  } = formData;
+
+  const composedMessage = `
+📝 *Form Kontak Website*
+
+📛 *Nama:* ${name}
+📞 *Telepon:* ${phone || '-'}
+📧 *Email:* ${email || '-'}
+🎯 *Subjek:* ${subject}
+💬 *Pesan:* ${message}
+  `;
+
+  const encodedMessage = encodeURIComponent(composedMessage.trim());
+  const whatsappNumber = '6282128294624';
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappURL, '_blank');
+};
 
   const contactInfo = [
     {
