@@ -106,6 +106,22 @@ const handleSubmit = (e: React.FormEvent) => {
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
   window.open(whatsappURL, '_blank');
+
+  setFormData({
+    name: '',
+    phone: '',
+    email: '',
+    birthDate: '',
+    gender: '',
+    address: '',
+    specialty: '',
+    doctor: '',
+    appointmentDate: '',
+    appointmentTime: '',
+    complaints: '',
+    insurance: '',
+    isNewPatient: true
+  })
 };
 
   return (
